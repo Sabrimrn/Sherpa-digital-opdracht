@@ -142,3 +142,45 @@ body {
     border: 2px solid var(--background-white); /* Witte rand */
 }
 
+/* --- 4. Intro Sectie Stijlen --- */
+.intro {
+    padding: 80px 0; /* Ruimte boven en onder de sectie */
+    background-color: #f8f9fa; /* Een heel lichtgrijze achtergrond om het te onderscheiden */
+}
+
+.intro-grid {
+    display: flex;
+    align-items: center; /* Lijn de afbeelding en tekst verticaal uit */
+    gap: 60px; /* Ruimte tussen de afbeelding en de tekst */
+}
+
+.intro-image {
+    flex: 1; /* Zorgt dat de kolom de beschikbare ruimte inneemt */
+}
+
+.intro-image img {
+    width: 100%; /* Maakt de afbeelding responsief */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+}
+
+.intro-text {
+    flex: 1; /* Zorgt dat deze kolom ook de ruimte inneemt */
+}
+
+.intro-text h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.intro-text .highlight-blue {
+    color: var(--sherpa-blue);
+}
+
+.intro-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+

@@ -409,3 +409,94 @@ body {
     color: #666;
 }
 
+/* --- 8. Projecten Sectie Stijlen --- */
+.projects {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Weer afwisselen met een lichte achtergrond */
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.project-card {
+    display: block;
+    position: relative;
+    min-height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--background-white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease;
+}
+
+/* De donkere laag over de afbeelding voor leesbaarheid */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 1;
+}
+
+.project-card-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Duwt de content naar onderen */
+}
+
+.project-category {
+    display: inline-block;
+    background-color: var(--sherpa-blue);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    align-self: flex-start; /* Zorgt dat de tag niet uitrekt */
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    font-weight: bold;
+    opacity: 0; /* Onzichtbaar in de normale staat */
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* De "wow" animatie voor deze sectie */
+.project-card:hover .project-card-background {
+    transform: scale(1.05); /* Zoomt in op de achtergrond */
+}
+
+.project-card:hover .project-link {
+    opacity: 1; /* Wordt zichtbaar bij hover */
+    transform: translateY(0);
+}
+

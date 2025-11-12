@@ -222,3 +222,77 @@ body {
     transform: scale(1.1); /* Maakt het logo iets groter bij hover */
 }
 
+/* --- 6. Services Sectie Stijlen --- */
+.services {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Dezelfde lichte achtergrond voor ritme */
+    text-align: center;
+}
+
+/* Een herbruikbare stijl voor sectie-titels */
+.section-header {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.section-header .subtitle {
+    color: var(--sherpa-blue);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+
+.section-header p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Grid voor de 3 service-items */
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.service-item {
+    background-color: var(--background-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Zorgt dat de items de ruimte verdelen */
+}
+
+.service-item h3 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    line-height: 1.6;
+}
+
+/* Herbruikbare stijl voor knoppen aan het einde van een sectie */
+.section-footer {
+    margin-top: 50px;
+}
+
+.button-dark {
+    background-color: var(--dark-blue);
+    color: var(--background-white);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+

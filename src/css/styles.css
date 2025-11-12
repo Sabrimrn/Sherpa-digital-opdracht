@@ -55,12 +55,14 @@ body {
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--dark-blue);
+    display: block; /* Zorgt voor stabiele layout */
 }
 
+.logo img {
+    height: 28px; /* Bepaalt de hoogte van het logo */
+    width: auto;
+    display: block;
+}
 .main-nav ul {
     list-style: none; /* Haalt de bolletjes van de lijst weg */
     display: flex;
@@ -581,12 +583,14 @@ body {
 }
 
 .footer-logo {
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--background-white);
     display: inline-block;
     margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 32px; /* Iets groter in de footer */
+    width: auto;
+    display: block;
 }
 
 .footer-col p {

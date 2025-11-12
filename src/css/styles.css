@@ -296,3 +296,21 @@ body {
     font-weight: bold;
 }
 
+/* --- 7. Team Sectie Stijlen --- */
+.team {
+    padding: 80px 0;
+    background-color: var(--background-white); /* Witte achtergrond, breekt lekker met het grijs ervoor */
+    text-align: center;
+}
+
+.team-photo-container {
+    margin-top: 60px; /* Flinke ruimte onder de introductietekst */
+    margin-bottom: 60px;
+}
+
+.team-photo-container img {
+    width: 100%;
+    border-radius: 12px; /* Iets rondere hoeken voor een zachte look */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Een wat zwaardere schaduw voor een "hero image" effect */
+}
+

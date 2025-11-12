@@ -32,7 +32,20 @@ body {
 
 /* --- 2. Header Stijlen --- */
 .main-header {
+    position: absolute;
+    width: 100%;
+    z-index: 10; /* Zorgt dat de header boven alles staat */
     padding: 20px 0; /* Ruimte boven en onder de header */
+}
+
+/* Verander de tekstkleur in de header naar wit */
+.main-header .logo,
+.main-header .main-nav a {
+    color: var(--background-white);
+}
+
+.main-header .lang-selector {
+    color: var(--background-white);
 }
 
 .header-container {
@@ -78,3 +91,54 @@ body {
 .lang-selector {
     font-weight: 500;
 }
+
+/* --- 3. Hero Sectie Stijlen --- */
+.hero {
+    background-color: var(--dark-blue);
+    color: var(--background-white);
+    padding: 100px 0; /* Flinke ruimte boven en onder */
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero-title .highlight {
+    color: var(--sherpa-green);
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    max-width: 600px; /* Zorgt dat de tekst niet te breed wordt */
+    margin: 0 auto 40px auto; /* Centreert de tekst en geeft ruimte onderaan */
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* We maken twee nieuwe knopstijlen */
+.button-primary {
+    background-color: var(--sherpa-blue);
+    color: var(--background-white);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--background-white);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--background-white); /* Witte rand */
+}
+

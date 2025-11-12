@@ -314,3 +314,86 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Een wat zwaardere schaduw voor een "hero image" effect */
 }
 
+/* --- Team Sectie Deel 2: Filters en Grid --- */
+.team-filters {
+    margin-bottom: 50px;
+}
+
+.team-filters ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--background-white);
+    border-color: var(--dark-blue);
+}
+
+/* De grid voor de profielkaarten */
+.team-grid {
+    display: grid;
+    /* Dit is een magische, responsieve grid. Geen media queries nodig! */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.team-member-card {
+    background-color: var(--background-white);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden; /* Zorgt dat de afbeelding netjes binnen de afgeronde hoeken blijft */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.team-member-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Zorgt voor perfect vierkante afbeeldingen */
+    object-fit: cover; /* Voorkomt dat de afbeelding uitrekt */
+}
+
+.team-member-info {
+    padding: 20px;
+}
+
+.department-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Verschillende kleuren voor de tags, voor een professionele look */
+.department-tag.management { background-color: #ffebee; color: #c62828; }
+.department-tag.adoption { background-color: #e3f2fd; color: #1565c0; }
+.department-tag.tech { background-color: #e8f5e9; color: #2e7d32; }
+.department-tag.commercieel { background-color: #fff3e0; color: #ef6c00; }
+
+.team-member-info h3 {
+    font-size: 22px;
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+}
+
+.team-member-info .role {
+    color: #666;
+}
+

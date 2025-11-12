@@ -1,0 +1,80 @@
+/* --- 1. Globale Stijlen & Variabelen --- */
+:root {
+    /* Kleuren van Sherpa */
+    --sherpa-blue: #0040ff;
+    --sherpa-green: #00e676;
+    --dark-blue: #0d1a40; /* Voor tekst en donkere elementen */
+    --background-white: #ffffff;
+    --text-color: #333333;
+
+    /* Lettertypes (voor nu een standaard nette font) */
+    --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Een simpele reset om browser-verschillen weg te halen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--background-white);
+}
+
+.container {
+    max-width: 1200px; /* Maximale breedte van de content */
+    margin: 0 auto;    /* Centreert de container */
+    padding: 0 20px;   /* Een beetje ruimte aan de zijkanten */
+}
+
+/* --- 2. Header Stijlen --- */
+.main-header {
+    padding: 20px 0; /* Ruimte boven en onder de header */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Spreidt de items (logo, nav, actions) uit */
+    align-items: center;            /* Centreert alles verticaal */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.main-nav ul {
+    list-style: none; /* Haalt de bolletjes van de lijst weg */
+    display: flex;
+    gap: 30px; /* Ruimte tussen de menu-items */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-cta {
+    background-color: var(--sherpa-green);
+    color: var(--dark-blue);
+    padding: 12px 24px;
+    border-radius: 8px; /* Afgeronde hoeken */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lang-selector {
+    font-weight: 500;
+}

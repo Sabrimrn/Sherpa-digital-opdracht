@@ -48,6 +48,12 @@ body {
     color: var(--background-white);
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Ruimte tussen de navigatie en de knoppen */
+}
+
 .header-container {
     display: flex;
     justify-content: space-between; /* Spreidt de items (logo, nav, actions) uit */
@@ -59,7 +65,7 @@ body {
 }
 
 .logo img {
-    height: 28px; /* Bepaalt de hoogte van het logo */
+    height: 34px; /* Bepaalt de hoogte van het logo */
     width: auto;
     display: block;
 }
@@ -588,7 +594,7 @@ body {
 }
 
 .footer-logo img {
-    height: 32px; /* Iets groter in de footer */
+    height: 34px; /* Iets groter in de footer */
     width: auto;
     display: block;
 }

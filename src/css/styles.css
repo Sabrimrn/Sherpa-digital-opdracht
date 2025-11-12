@@ -184,3 +184,15 @@ body {
     margin-bottom: 30px;
 }
 
+/* --- Animatie-helpers --- */
+.fade-in-section {
+    opacity: 0; /* Begin onzichtbaar */
+    transform: translateY(20px); /* Begin een klein beetje lager */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* De animatie zelf */
+}
+
+.fade-in-section.is-visible {
+    opacity: 1; /* Wordt volledig zichtbaar */
+    transform: translateY(0); /* Komt terug op de originele positie */
+}
+

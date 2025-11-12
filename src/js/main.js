@@ -1,5 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+import { initializeTeamFilter } from './team-filter.js';
 
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Initialiseer de scroll-animaties
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -7,12 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.1 // Start de animatie als 10% van de sectie zichtbaar is
+        threshold: 0.1
     });
 
     const sectionsToAnimate = document.querySelectorAll('.fade-in-section');
     sectionsToAnimate.forEach(section => {
         observer.observe(section);
     });
+
+    // 2. Initialiseer de team-filter functionaliteit
+    initializeTeamFilter();
 
 });

@@ -161,8 +161,9 @@ body {
 }
 
 .intro-grid {
-    display: flex;
-    align-items: center; /* Lijn de afbeelding en tekst verticaal uit */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Twee gelijke kolommen */
+    align-items: start; /* Lijnt de inhoud bovenaan uit */
     gap: 60px; /* Ruimte tussen de afbeelding en de tekst */
 }
 

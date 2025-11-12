@@ -65,7 +65,7 @@ body {
 }
 
 .logo img {
-    height: 34px; /* Bepaalt de hoogte van het logo */
+    height: 44px; /* Bepaalt de hoogte van het logo */
     width: auto;
     display: block;
 }
@@ -594,7 +594,7 @@ body {
 }
 
 .footer-logo img {
-    height: 34px; /* Iets groter in de footer */
+    height: 40px; /* Iets groter in de footer */
     width: auto;
     display: block;
 }

@@ -196,3 +196,29 @@ body {
     transform: translateY(0); /* Komt terug op de originele positie */
 }
 
+/* --- 5. Klanten Sectie Stijlen --- */
+.clients {
+    background-color: var(--dark-blue);
+    padding: 50px 0;
+}
+
+.clients-grid {
+    display: flex;
+    justify-content: space-around; /* Verdeelt de logo's gelijkmatig */
+    align-items: center;
+    flex-wrap: wrap; /* Zorgt dat logo's naar een volgende regel springen op kleine schermen */
+    gap: 40px; /* Ruimte tussen de logo's */
+}
+
+.client-logo img {
+    height: 40px; /* Zorgt dat alle logo's dezelfde hoogte hebben */
+    filter: grayscale(100%) brightness(5); /* Maakt ze wit/grijsachtig */
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out; /* Vloeiende overgang */
+}
+
+.client-logo img:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Maakt het logo iets groter bij hover */
+}
+
